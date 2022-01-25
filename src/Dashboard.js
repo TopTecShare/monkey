@@ -93,10 +93,6 @@ const Dashboard = () => {
 
     setWallet(address);
     setStatus(status);
-    setMintCount(0);
-
-    // const initIds = generateInitIds();
-    // setInitialIds(initIds);
 
     addWalletListener();
     window.addEventListener("focus", setInit);
@@ -243,7 +239,7 @@ const Dashboard = () => {
       // let tx = await contract.mintToken(numberOfCETS, { value: BigNumber.from(1e9).mul(BigNumber.from(1e9)).mul(6).div(100).mul(numberOfCETS), from: walletAddress })
 
       const price = contractR.cost(1); //250000000000000000; // 0.08 eth
-      console.log(price);
+      price.then(console.log);
       let tx = await contract.buy({
         value: price,
         from: walletAddress,

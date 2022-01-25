@@ -1,7 +1,149 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
+import { Tabs, Tab } from "react-bootstrap";
+import {
+  NotificationManager,
+  // NotificationContainer,
+} from "react-notifications";
+import { Button } from "react-bootstrap";
+import {
+  connectWallet,
+  getCurrentWalletConnected,
+} from "../../utils/interact.js";
+
+import {
+  getFreeClaimHexProofFromAddrs,
+  getFreeClaimCount,
+} from "../../utils/util.js";
+
+import { ethers } from "ethers";
+import { chainId, contractAddress } from "../../constants/address";
 
 export default function Claim() {
   const [key, setKey] = useState("home");
+  const [mintCount, setMintCount] = useState(0);
+  const [walletAddress, setWallet] = useState("");
+  const [status, setStatus] = useState("");
+  const [mintLoading, setMintLoading] = useState(false);
+  const totalSupply = 12000;
+
+  // Contract can be used to write Contract
+  const getContractWithSigner = () => {
+    const infuraProvider = new ethers.providers.Web3Provider(window.ethereum);
+    const signer = infuraProvider.getSigner();
+
+    const contractABI = require("../../constants/contract-abi.json");
+    const contract = new ethers.Contract(contractAddress, contractABI, signer);
+
+    return contract;
+  };
+
+  // Contract can be used to read Contract
+  const getContractWithoutSigner = () => {
+    const infuraProvider = new ethers.providers.Web3Provider(window.ethereum);
+
+    const contractABI = require("../../constants/contract-abi.json");
+    const contract = new ethers.Contract(
+      contractAddress,
+      contractABI,
+      infuraProvider
+    );
+
+    return contract;
+  };
+  function addWalletListener() {
+    if (window.ethereum) {
+      window.ethereum.on("accountsChanged", (accounts) => {
+        if (accounts.length > 0) {
+          setWallet(accounts[0]);
+          setStatus("👆🏽 You can mint new pack now.");
+        } else {
+          setWallet("");
+          setStatus("🦊 Connect to Metamask using the Connect button.");
+        }
+      });
+      window.ethereum.on("chainChanged", (chain) => {
+        connectWalletPressed();
+        if (chain !== chainId) {
+        }
+      });
+      const contract = getContractWithoutSigner();
+      contract.totalSupply().then(setMintCount);
+      contract.on("Transfer", (from, to, index) => {
+        contract.totalSupply().then(setMintCount);
+      });
+    } else {
+      setStatus(
+        <p>
+          {" "}
+          🦊{" "}
+          {/* <a target="_blank" href={`https://metamask.io/download.html`}> */}
+          You must install Metamask, a virtual Ethereum wallet, in your
+          browser.(https://metamask.io/download.html)
+          {/* </a> */}
+        </p>
+      );
+    }
+  }
+
+  useEffect(async () => {
+    const { address, status } = await getCurrentWalletConnected();
+
+    setWallet(address);
+    setStatus(status);
+
+    addWalletListener();
+  }, []);
+
+  const connectWalletPressed = async () => {
+    const walletResponse = await connectWallet();
+    setStatus(walletResponse.status);
+    setWallet(walletResponse.address);
+  };
+
+  const onMintPressed = async () => {
+    if (!walletAddress) {
+      setStatus("Please connect with Metamask");
+      return;
+    }
+
+    setMintLoading(true);
+
+    const contract = getContractWithSigner();
+
+    try {
+      // let randomIds = await getRandomIds();
+
+      // let tx = await contract.mintToken(numberOfCETS, { value: BigNumber.from(1e9).mul(BigNumber.from(1e9)).mul(6).div(100).mul(numberOfCETS), from: walletAddress })
+      // console.log(contract.whitelistMint)
+      // console.log(getWhitelistHexProofFromAddrs(walletAddress))
+      let count = getFreeClaimCount(walletAddress);
+			console.log(count)
+      let tx = await contract.claim(
+        count,
+        getFreeClaimHexProofFromAddrs(count, walletAddress),
+        {
+          from: walletAddress,
+        }
+      );
+
+      let res = await tx.wait();
+      console.log(res);
+      if (res.transactionHash) {
+        let status = "You minted successfully";
+        setStatus(status);
+        setMintLoading(false);
+        NotificationManager.success(status);
+      }
+    } catch (err) {
+      // let status = "Transaction failed because you have insufficient funds or sales not started"
+      let status = "Transaction failed";
+      setStatus(status);
+      setMintLoading(false);
+      NotificationManager.error(status);
+    }
+  };
+
   return (
     <React.Fragment>
       <div className="section whitelist">
@@ -30,9 +172,21 @@ export default function Claim() {
                   />
                 </div>
                 <div className="row top-30">
-                  <a className="btn btn-dark" href="#">
-                    CONNECT To WALLET
-                  </a>
+                  {walletAddress.length > 0 ? (
+                    <Button
+                      className="btn btn-dark"
+                      variant="primary"
+                      type="submit"
+                      onClick={onMintPressed}
+                      disabled={mintLoading || mintCount >= totalSupply}
+                    >
+                      Mint Now
+                    </Button>
+                  ) : (
+                    <Button variant="primary" onClick={connectWalletPressed}>
+                      <span>CONNECT WALLET</span>
+                    </Button>
+                  )}
                 </div>
               </div>
               <div className="col-md-6 offset-3 text-center top-50 whitelist-text">
