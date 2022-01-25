@@ -69,6 +69,11 @@ const Dashboard = () => {
         }
       });
       setInit();
+      // const contract = getContractWithoutSigner();
+      // contract.on("Revenue", (beneficiary, n, _cost) => {
+      //   console.log(beneficiary, n, _cost);
+      //   setMintCount(Number(mintCount) + n);
+      // });
     } else {
       setStatus(
         <p>
@@ -217,12 +222,12 @@ const Dashboard = () => {
       return;
     }
 
-    if (mintCount < 1) {
+    if (mint < 1) {
       setStatus("Mint amount can't be less than 0");
       return;
     }
 
-    if (mintCount > 10) {
+    if (mint > 10) {
       setStatus("Mint amount can't be greater than 10");
       return;
     }
