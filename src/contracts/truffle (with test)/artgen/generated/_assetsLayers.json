@@ -1,0 +1,1570 @@
+[
+    {
+        "id": 0,
+        "name": "BACKGROUND",
+        "required": true,
+        "path": "",
+        "elements": [
+            {
+                "id": 0,
+                "name": "black",
+                "filename": "./layers/BACKGROUND/black.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 1,
+                "name": "city",
+                "filename": "./layers/BACKGROUND/city.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 2,
+                "name": "coral gradient",
+                "filename": "./layers/BACKGROUND/coral gradient.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 3,
+                "name": "coral",
+                "filename": "./layers/BACKGROUND/coral.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 4,
+                "name": "dark gray gradient",
+                "filename": "./layers/BACKGROUND/dark gray gradient.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 5,
+                "name": "dark purple gradient",
+                "filename": "./layers/BACKGROUND/dark purple gradient.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 6,
+                "name": "desert",
+                "filename": "./layers/BACKGROUND/desert.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 7,
+                "name": "green gradient",
+                "filename": "./layers/BACKGROUND/green gradient.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 8,
+                "name": "grey",
+                "filename": "./layers/BACKGROUND/grey.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 9,
+                "name": "jungle",
+                "filename": "./layers/BACKGROUND/jungle.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 10,
+                "name": "lava",
+                "filename": "./layers/BACKGROUND/lava.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 11,
+                "name": "lime gradient",
+                "filename": "./layers/BACKGROUND/lime gradient.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 12,
+                "name": "lunar",
+                "filename": "./layers/BACKGROUND/lunar.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 13,
+                "name": "mix pastel gradient",
+                "filename": "./layers/BACKGROUND/mix pastel gradient.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 14,
+                "name": "mm gradient",
+                "filename": "./layers/BACKGROUND/mm gradient.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 15,
+                "name": "mountains",
+                "filename": "./layers/BACKGROUND/mountains.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 16,
+                "name": "mushrooms",
+                "filename": "./layers/BACKGROUND/mushrooms.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 17,
+                "name": "orange gradient",
+                "filename": "./layers/BACKGROUND/orange gradient.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 18,
+                "name": "orange",
+                "filename": "./layers/BACKGROUND/orange.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 19,
+                "name": "palm beach",
+                "filename": "./layers/BACKGROUND/palm beach.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 20,
+                "name": "pastel green",
+                "filename": "./layers/BACKGROUND/pastel green.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 21,
+                "name": "pink",
+                "filename": "./layers/BACKGROUND/pink.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 22,
+                "name": "purple gradient",
+                "filename": "./layers/BACKGROUND/purple gradient.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 23,
+                "name": "purple",
+                "filename": "./layers/BACKGROUND/purple.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 24,
+                "name": "radioactive",
+                "filename": "./layers/BACKGROUND/radioactive.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 25,
+                "name": "sky blue gradient",
+                "filename": "./layers/BACKGROUND/sky blue gradient.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 26,
+                "name": "sky blue",
+                "filename": "./layers/BACKGROUND/sky blue.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 27,
+                "name": "southern gradient",
+                "filename": "./layers/BACKGROUND/southern gradient.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 28,
+                "name": "white",
+                "filename": "./layers/BACKGROUND/white.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 29,
+                "name": "yellow",
+                "filename": "./layers/BACKGROUND/yellow.png",
+                "rarityRating": 0
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "BASE",
+        "required": true,
+        "path": "",
+        "elements": [
+            {
+                "id": 0,
+                "name": "base",
+                "filename": "./layers/BASE/base.png",
+                "rarityRating": 0
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "EYE",
+        "required": true,
+        "path": "",
+        "elements": [
+            {
+                "id": 0,
+                "name": "angry",
+                "filename": "./layers/EYE/angry.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 1,
+                "name": "black ghost eyes",
+                "filename": "./layers/EYE/black ghost eyes.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 2,
+                "name": "bloodshot",
+                "filename": "./layers/EYE/bloodshot.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 3,
+                "name": "blue laser",
+                "filename": "./layers/EYE/blue laser.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 4,
+                "name": "bored",
+                "filename": "./layers/EYE/bored.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 5,
+                "name": "btc",
+                "filename": "./layers/EYE/btc.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 6,
+                "name": "closed",
+                "filename": "./layers/EYE/closed.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 7,
+                "name": "crazy",
+                "filename": "./layers/EYE/crazy.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 8,
+                "name": "cyborg eye",
+                "filename": "./layers/EYE/cyborg eye.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 9,
+                "name": "fire",
+                "filename": "./layers/EYE/fire.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 10,
+                "name": "ghost eyes",
+                "filename": "./layers/EYE/ghost eyes.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 11,
+                "name": "hypnotized",
+                "filename": "./layers/EYE/hypnotized.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 12,
+                "name": "in love",
+                "filename": "./layers/EYE/in love.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 13,
+                "name": "in tears",
+                "filename": "./layers/EYE/in tears.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 14,
+                "name": "laughing",
+                "filename": "./layers/EYE/laughing.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 15,
+                "name": "lime laser",
+                "filename": "./layers/EYE/lime laser.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 16,
+                "name": "mm ghost eyes",
+                "filename": "./layers/EYE/mm ghost eyes.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 17,
+                "name": "popped eye",
+                "filename": "./layers/EYE/popped eye.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 18,
+                "name": "purple laser",
+                "filename": "./layers/EYE/purple laser.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 19,
+                "name": "red laser",
+                "filename": "./layers/EYE/red laser.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 20,
+                "name": "sad",
+                "filename": "./layers/EYE/sad.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 21,
+                "name": "snake eyes",
+                "filename": "./layers/EYE/snake eyes.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 22,
+                "name": "surprised",
+                "filename": "./layers/EYE/surprised.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 23,
+                "name": "thinking",
+                "filename": "./layers/EYE/thinking.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 24,
+                "name": "tired",
+                "filename": "./layers/EYE/tired.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 25,
+                "name": "trippy",
+                "filename": "./layers/EYE/trippy.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 26,
+                "name": "winking",
+                "filename": "./layers/EYE/winking.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 27,
+                "name": "x eyes",
+                "filename": "./layers/EYE/x eyes.png",
+                "rarityRating": 0
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "EYEWEAR",
+        "required": true,
+        "path": "",
+        "elements": [
+            {
+                "id": 0,
+                "name": "eye patch",
+                "filename": "./layers/EYEWEAR/eye patch.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 1,
+                "name": "holographic",
+                "filename": "./layers/EYEWEAR/holographic.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 2,
+                "name": "laser line",
+                "filename": "./layers/EYEWEAR/laser line.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 3,
+                "name": "mm glasses",
+                "filename": "./layers/EYEWEAR/mm glasses.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 4,
+                "name": "mm laser line",
+                "filename": "./layers/EYEWEAR/mm laser line.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 5,
+                "name": "monocle",
+                "filename": "./layers/EYEWEAR/monocle.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 6,
+                "name": "neon",
+                "filename": "./layers/EYEWEAR/neon.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 7,
+                "name": "night vision",
+                "filename": "./layers/EYEWEAR/night vision.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 8,
+                "name": "oversized mirror ",
+                "filename": "./layers/EYEWEAR/oversized mirror .png",
+                "rarityRating": 0
+            },
+            {
+                "id": 9,
+                "name": "round shape",
+                "filename": "./layers/EYEWEAR/round shape.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 10,
+                "name": "scouter power glasses",
+                "filename": "./layers/EYEWEAR/scouter power glasses.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 11,
+                "name": "snowboard",
+                "filename": "./layers/EYEWEAR/snowboard.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 12,
+                "name": "star shaped",
+                "filename": "./layers/EYEWEAR/star shaped.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 13,
+                "name": "sunglasses",
+                "filename": "./layers/EYEWEAR/sunglasses.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 14,
+                "name": "swimming goggles",
+                "filename": "./layers/EYEWEAR/swimming goggles.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 15,
+                "name": "welding goggles",
+                "filename": "./layers/EYEWEAR/welding goggles.png",
+                "rarityRating": 0
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "MOUTH",
+        "required": true,
+        "path": "",
+        "elements": [
+            {
+                "id": 0,
+                "name": "angry grin",
+                "filename": "./layers/MOUTH/angry grin.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 1,
+                "name": "bandana",
+                "filename": "./layers/MOUTH/bandana.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 2,
+                "name": "big smile",
+                "filename": "./layers/MOUTH/big smile.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 3,
+                "name": "bored",
+                "filename": "./layers/MOUTH/bored.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 4,
+                "name": "cigar",
+                "filename": "./layers/MOUTH/cigar.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 5,
+                "name": "cigarette",
+                "filename": "./layers/MOUTH/cigarette.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 6,
+                "name": "diamond grills",
+                "filename": "./layers/MOUTH/diamond grills.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 7,
+                "name": "gold grills",
+                "filename": "./layers/MOUTH/gold grills.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 8,
+                "name": "graffiti mask",
+                "filename": "./layers/MOUTH/graffiti mask.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 9,
+                "name": "hannya mask",
+                "filename": "./layers/MOUTH/hannya mask.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 10,
+                "name": "joint",
+                "filename": "./layers/MOUTH/joint.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 11,
+                "name": "knocked out tooth",
+                "filename": "./layers/MOUTH/knocked out tooth.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 12,
+                "name": "light shave",
+                "filename": "./layers/MOUTH/light shave.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 13,
+                "name": "medical mask",
+                "filename": "./layers/MOUTH/medical mask.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 14,
+                "name": "mm grills",
+                "filename": "./layers/MOUTH/mm grills.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 15,
+                "name": "ninja mask",
+                "filename": "./layers/MOUTH/ninja mask.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 16,
+                "name": "oh",
+                "filename": "./layers/MOUTH/oh.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 17,
+                "name": "rage",
+                "filename": "./layers/MOUTH/rage.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 18,
+                "name": "rainbow grills",
+                "filename": "./layers/MOUTH/rainbow grills.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 19,
+                "name": "side grin",
+                "filename": "./layers/MOUTH/side grin.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 20,
+                "name": "silver grills",
+                "filename": "./layers/MOUTH/silver grills.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 21,
+                "name": "smile",
+                "filename": "./layers/MOUTH/smile.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 22,
+                "name": "tongue out",
+                "filename": "./layers/MOUTH/tongue out.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 23,
+                "name": "underwater respirator",
+                "filename": "./layers/MOUTH/underwater respirator.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 24,
+                "name": "vampire",
+                "filename": "./layers/MOUTH/vampire.png",
+                "rarityRating": 0
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "FUR",
+        "required": true,
+        "path": "",
+        "elements": [
+            {
+                "id": 0,
+                "name": "black crystal",
+                "filename": "./layers/FUR/black crystal.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 1,
+                "name": "black",
+                "filename": "./layers/FUR/black.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 2,
+                "name": "brown",
+                "filename": "./layers/FUR/brown.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 3,
+                "name": "cream",
+                "filename": "./layers/FUR/cream.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 4,
+                "name": "crystal",
+                "filename": "./layers/FUR/crystal.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 5,
+                "name": "fuchsia",
+                "filename": "./layers/FUR/fuchsia.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 6,
+                "name": "gold",
+                "filename": "./layers/FUR/gold.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 7,
+                "name": "jaguar",
+                "filename": "./layers/FUR/jaguar.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 8,
+                "name": "lava",
+                "filename": "./layers/FUR/lava.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 9,
+                "name": "light purple",
+                "filename": "./layers/FUR/light purple.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 10,
+                "name": "lime crystal",
+                "filename": "./layers/FUR/lime crystal.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 11,
+                "name": "marble",
+                "filename": "./layers/FUR/marble.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 12,
+                "name": "mm crystal",
+                "filename": "./layers/FUR/mm crystal.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 13,
+                "name": "orange",
+                "filename": "./layers/FUR/orange.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 14,
+                "name": "pink crystal",
+                "filename": "./layers/FUR/pink crystal.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 15,
+                "name": "pink",
+                "filename": "./layers/FUR/pink.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 16,
+                "name": "purple crystal",
+                "filename": "./layers/FUR/purple crystal.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 17,
+                "name": "purple",
+                "filename": "./layers/FUR/purple.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 18,
+                "name": "red",
+                "filename": "./layers/FUR/red.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 19,
+                "name": "royal blue",
+                "filename": "./layers/FUR/royal blue.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 20,
+                "name": "shell nacre",
+                "filename": "./layers/FUR/shell nacre.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 21,
+                "name": "silver",
+                "filename": "./layers/FUR/silver.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 22,
+                "name": "sky blue",
+                "filename": "./layers/FUR/sky blue.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 23,
+                "name": "snake scales",
+                "filename": "./layers/FUR/snake scales.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 24,
+                "name": "teal crystal",
+                "filename": "./layers/FUR/teal crystal.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 25,
+                "name": "tiger",
+                "filename": "./layers/FUR/tiger.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 26,
+                "name": "trippy",
+                "filename": "./layers/FUR/trippy.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 27,
+                "name": "velvet",
+                "filename": "./layers/FUR/velvet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 28,
+                "name": "white",
+                "filename": "./layers/FUR/white.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 29,
+                "name": "yellow",
+                "filename": "./layers/FUR/yellow.png",
+                "rarityRating": 0
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "CLOTHING",
+        "required": true,
+        "path": "",
+        "elements": [
+            {
+                "id": 0,
+                "name": "army uniform",
+                "filename": "./layers/CLOTHING/army uniform.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 1,
+                "name": "astro suit",
+                "filename": "./layers/CLOTHING/astro suit.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 2,
+                "name": "biker jacket",
+                "filename": "./layers/CLOTHING/biker jacket.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 3,
+                "name": "black armor",
+                "filename": "./layers/CLOTHING/black armor.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 4,
+                "name": "black suit",
+                "filename": "./layers/CLOTHING/black suit.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 5,
+                "name": "black undershirt",
+                "filename": "./layers/CLOTHING/black undershirt.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 6,
+                "name": "centurion armor",
+                "filename": "./layers/CLOTHING/centurion armor.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 7,
+                "name": "chef apron",
+                "filename": "./layers/CLOTHING/chef apron.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 8,
+                "name": "coat",
+                "filename": "./layers/CLOTHING/coat.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 9,
+                "name": "convict suit",
+                "filename": "./layers/CLOTHING/convict suit.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 10,
+                "name": "cowboy jacket",
+                "filename": "./layers/CLOTHING/cowboy jacket.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 11,
+                "name": "deadly suit",
+                "filename": "./layers/CLOTHING/deadly suit.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 12,
+                "name": "emperor armor",
+                "filename": "./layers/CLOTHING/emperor armor.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 13,
+                "name": "gladiator shoulder pad",
+                "filename": "./layers/CLOTHING/gladiator shoulder pad.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 14,
+                "name": "hawaiian shirt",
+                "filename": "./layers/CLOTHING/hawaiian shirt.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 15,
+                "name": "hoodie",
+                "filename": "./layers/CLOTHING/hoodie.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 16,
+                "name": "jeans jacket",
+                "filename": "./layers/CLOTHING/jeans jacket.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 17,
+                "name": "kimono",
+                "filename": "./layers/CLOTHING/kimono.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 18,
+                "name": "lab coat",
+                "filename": "./layers/CLOTHING/lab coat.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 19,
+                "name": "lightrider",
+                "filename": "./layers/CLOTHING/lightrider.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 20,
+                "name": "mm astro suit",
+                "filename": "./layers/CLOTHING/mm astro suit.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 21,
+                "name": "mm deadly suit",
+                "filename": "./layers/CLOTHING/mm deadly suit.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 22,
+                "name": "mm hawaiian shirt",
+                "filename": "./layers/CLOTHING/mm hawaiian shirt.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 23,
+                "name": "mm lightrider",
+                "filename": "./layers/CLOTHING/mm lightrider.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 24,
+                "name": "overall",
+                "filename": "./layers/CLOTHING/overall.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 25,
+                "name": "pimp jacket",
+                "filename": "./layers/CLOTHING/pimp jacket.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 26,
+                "name": "police armor",
+                "filename": "./layers/CLOTHING/police armor.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 27,
+                "name": "primitive shoulder pad",
+                "filename": "./layers/CLOTHING/primitive shoulder pad.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 28,
+                "name": "red jacket",
+                "filename": "./layers/CLOTHING/red jacket.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 29,
+                "name": "rescue suit",
+                "filename": "./layers/CLOTHING/rescue suit.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 30,
+                "name": "samurai armor",
+                "filename": "./layers/CLOTHING/samurai armor.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 31,
+                "name": "shirt and vest",
+                "filename": "./layers/CLOTHING/shirt and vest.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 32,
+                "name": "white undershirt",
+                "filename": "./layers/CLOTHING/white undershirt.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 33,
+                "name": "wizard robe",
+                "filename": "./layers/CLOTHING/wizard robe.png",
+                "rarityRating": 0
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "HEADGEAR",
+        "required": true,
+        "path": "",
+        "elements": [
+            {
+                "id": 0,
+                "name": "afro",
+                "filename": "./layers/HEADGEAR/afro.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 1,
+                "name": "army beret",
+                "filename": "./layers/HEADGEAR/army beret.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 2,
+                "name": "astro helmet",
+                "filename": "./layers/HEADGEAR/astro helmet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 3,
+                "name": "baseball cap",
+                "filename": "./layers/HEADGEAR/baseball cap.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 4,
+                "name": "beanie",
+                "filename": "./layers/HEADGEAR/beanie.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 5,
+                "name": "biker helmet",
+                "filename": "./layers/HEADGEAR/biker helmet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 6,
+                "name": "black fedora",
+                "filename": "./layers/HEADGEAR/black fedora.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 7,
+                "name": "black headband",
+                "filename": "./layers/HEADGEAR/black headband.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 8,
+                "name": "centurion helmet",
+                "filename": "./layers/HEADGEAR/centurion helmet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 9,
+                "name": "chef toque",
+                "filename": "./layers/HEADGEAR/chef toque.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 10,
+                "name": "clown wig",
+                "filename": "./layers/HEADGEAR/clown wig.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 11,
+                "name": "cowboy hat",
+                "filename": "./layers/HEADGEAR/cowboy hat.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 12,
+                "name": "crown",
+                "filename": "./layers/HEADGEAR/crown.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 13,
+                "name": "deadly helmet",
+                "filename": "./layers/HEADGEAR/deadly helmet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 14,
+                "name": "general cap",
+                "filename": "./layers/HEADGEAR/general cap.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 15,
+                "name": "gladiator helmet",
+                "filename": "./layers/HEADGEAR/gladiator helmet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 16,
+                "name": "hip hop cap",
+                "filename": "./layers/HEADGEAR/hip hop cap.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 17,
+                "name": "horned helmet",
+                "filename": "./layers/HEADGEAR/horned helmet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 18,
+                "name": "kasa",
+                "filename": "./layers/HEADGEAR/kasa.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 19,
+                "name": "lightrider helmet",
+                "filename": "./layers/HEADGEAR/lightrider helmet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 20,
+                "name": "mm afro",
+                "filename": "./layers/HEADGEAR/mm afro.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 21,
+                "name": "mm astro helmet",
+                "filename": "./layers/HEADGEAR/mm astro helmet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 22,
+                "name": "mm deadly helmet",
+                "filename": "./layers/HEADGEAR/mm deadly helmet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 23,
+                "name": "mm lightrider helmet",
+                "filename": "./layers/HEADGEAR/mm lightrider helmet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 24,
+                "name": "panama hat ",
+                "filename": "./layers/HEADGEAR/panama hat .png",
+                "rarityRating": 0
+            },
+            {
+                "id": 25,
+                "name": "pimp hat",
+                "filename": "./layers/HEADGEAR/pimp hat.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 26,
+                "name": "pirate hat",
+                "filename": "./layers/HEADGEAR/pirate hat.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 27,
+                "name": "police helmet",
+                "filename": "./layers/HEADGEAR/police helmet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 28,
+                "name": "rescue helmet",
+                "filename": "./layers/HEADGEAR/rescue helmet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 29,
+                "name": "safety helmet",
+                "filename": "./layers/HEADGEAR/safety helmet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 30,
+                "name": "steampunk hat",
+                "filename": "./layers/HEADGEAR/steampunk hat.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 31,
+                "name": "sushi chef",
+                "filename": "./layers/HEADGEAR/sushi chef.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 32,
+                "name": "tactical helmet",
+                "filename": "./layers/HEADGEAR/tactical helmet.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 33,
+                "name": "top hat",
+                "filename": "./layers/HEADGEAR/top hat.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 34,
+                "name": "white fedora",
+                "filename": "./layers/HEADGEAR/white fedora.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 35,
+                "name": "wizard hat",
+                "filename": "./layers/HEADGEAR/wizard hat.png",
+                "rarityRating": 0
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "EARRINGS",
+        "required": true,
+        "path": "",
+        "elements": [
+            {
+                "id": 0,
+                "name": "diamond stud",
+                "filename": "./layers/EARRINGS/diamond stud.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 1,
+                "name": "gold hoop",
+                "filename": "./layers/EARRINGS/gold hoop.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 2,
+                "name": "gold stud",
+                "filename": "./layers/EARRINGS/gold stud.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 3,
+                "name": "mm diamond stud",
+                "filename": "./layers/EARRINGS/mm diamond stud.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 4,
+                "name": "silver hoop",
+                "filename": "./layers/EARRINGS/silver hoop.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 5,
+                "name": "silver stud",
+                "filename": "./layers/EARRINGS/silver stud.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 6,
+                "name": "skull stud",
+                "filename": "./layers/EARRINGS/skull stud.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 7,
+                "name": "spike stud",
+                "filename": "./layers/EARRINGS/spike stud.png",
+                "rarityRating": 0
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "HOLDING",
+        "required": true,
+        "path": "",
+        "elements": [
+            {
+                "id": 0,
+                "name": "banana",
+                "filename": "./layers/HOLDING/banana.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 1,
+                "name": "butcher knife",
+                "filename": "./layers/HOLDING/butcher knife.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 2,
+                "name": "butterfly knife",
+                "filename": "./layers/HOLDING/butterfly knife.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 3,
+                "name": "cigar",
+                "filename": "./layers/HOLDING/cigar.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 4,
+                "name": "diamond",
+                "filename": "./layers/HOLDING/diamond.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 5,
+                "name": "dollars stack",
+                "filename": "./layers/HOLDING/dollars stack.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 6,
+                "name": "double barrel shotgun",
+                "filename": "./layers/HOLDING/double barrel shotgun.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 7,
+                "name": "energy grenade",
+                "filename": "./layers/HOLDING/energy grenade.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 8,
+                "name": "gold stick",
+                "filename": "./layers/HOLDING/gold stick.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 9,
+                "name": "graffiti spray",
+                "filename": "./layers/HOLDING/graffiti spray.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 10,
+                "name": "grapnel gun",
+                "filename": "./layers/HOLDING/grapnel gun.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 11,
+                "name": "gym weight",
+                "filename": "./layers/HOLDING/gym weight.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 12,
+                "name": "handgun",
+                "filename": "./layers/HOLDING/handgun.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 13,
+                "name": "iron fist knuckles",
+                "filename": "./layers/HOLDING/iron fist knuckles.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 14,
+                "name": "katana",
+                "filename": "./layers/HOLDING/katana.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 15,
+                "name": "kunai",
+                "filename": "./layers/HOLDING/kunai.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 16,
+                "name": "lab flask",
+                "filename": "./layers/HOLDING/lab flask.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 17,
+                "name": "laser disc",
+                "filename": "./layers/HOLDING/laser disc.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 18,
+                "name": "laser spike ball",
+                "filename": "./layers/HOLDING/laser spike ball.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 19,
+                "name": "magic wand",
+                "filename": "./layers/HOLDING/magic wand.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 20,
+                "name": "mm diamond",
+                "filename": "./layers/HOLDING/mm diamond.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 21,
+                "name": "mm laser disc",
+                "filename": "./layers/HOLDING/mm laser disc.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 22,
+                "name": "mm spec ops laser rifle",
+                "filename": "./layers/HOLDING/mm spec ops laser rifle.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 23,
+                "name": "mm tac laser rifle",
+                "filename": "./layers/HOLDING/mm tac laser rifle.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 24,
+                "name": "money gun",
+                "filename": "./layers/HOLDING/money gun.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 25,
+                "name": "pen",
+                "filename": "./layers/HOLDING/pen.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 26,
+                "name": "pirate knife",
+                "filename": "./layers/HOLDING/pirate knife.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 27,
+                "name": "pocket knife",
+                "filename": "./layers/HOLDING/pocket knife.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 28,
+                "name": "police laser gun",
+                "filename": "./layers/HOLDING/police laser gun.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 29,
+                "name": "primitive axe",
+                "filename": "./layers/HOLDING/primitive axe.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 30,
+                "name": "pugio",
+                "filename": "./layers/HOLDING/pugio.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 31,
+                "name": "rescue axe",
+                "filename": "./layers/HOLDING/rescue axe.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 32,
+                "name": "revolver",
+                "filename": "./layers/HOLDING/revolver.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 33,
+                "name": "spec ops laser rifle",
+                "filename": "./layers/HOLDING/spec ops laser rifle.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 34,
+                "name": "sushi knife",
+                "filename": "./layers/HOLDING/sushi knife.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 35,
+                "name": "syringe",
+                "filename": "./layers/HOLDING/syringe.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 36,
+                "name": "tac laser rifle",
+                "filename": "./layers/HOLDING/tac laser rifle.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 37,
+                "name": "tac shotgun",
+                "filename": "./layers/HOLDING/tac shotgun.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 38,
+                "name": "vape",
+                "filename": "./layers/HOLDING/vape.png",
+                "rarityRating": 0
+            },
+            {
+                "id": 39,
+                "name": "wrench",
+                "filename": "./layers/HOLDING/wrench.png",
+                "rarityRating": 0
+            }
+        ]
+    }
+]

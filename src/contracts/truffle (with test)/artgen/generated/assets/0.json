@@ -1,0 +1,48 @@
+{
+    "name": "The Potion Shop #0",
+    "description": "A collection of 10,000 unique, magical potions on the ethereum blockchain.",
+    "edition": 0,
+    "date": 1642342496295,
+    "attributes": [
+        {
+            "trait_type": "BACKGROUND",
+            "value": "pink"
+        },
+        {
+            "trait_type": "BASE",
+            "value": "base"
+        },
+        {
+            "trait_type": "EYE",
+            "value": "crazy"
+        },
+        {
+            "trait_type": "EYEWEAR",
+            "value": "monocle"
+        },
+        {
+            "trait_type": "MOUTH",
+            "value": "rage"
+        },
+        {
+            "trait_type": "FUR",
+            "value": "light purple"
+        },
+        {
+            "trait_type": "CLOTHING",
+            "value": "deadly suit"
+        },
+        {
+            "trait_type": "HEADGEAR",
+            "value": "steampunk hat"
+        },
+        {
+            "trait_type": "EARRINGS",
+            "value": "silver stud"
+        },
+        {
+            "trait_type": "HOLDING",
+            "value": "mm diamond"
+        }
+    ]
+}

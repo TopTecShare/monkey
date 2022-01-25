@@ -1,0 +1,57 @@
+/**** evolution-lab section **/
+.section.whitelist {
+  background-image: url("img/clame-pg-section-new.jpg");
+  padding-top: 270px;
+  padding-bottom: 150px;
+  background-size: cover;
+  background-position: center;
+}
+.section.whitelist2 {
+  background-image: url("img/clame-pg-section-2.jpg") !important;
+  padding-top: 270px;
+  padding-bottom: 150px;
+  background-size: cover;
+  background-position: center;
+}
+.game.comic-tab .tab-content p.white-text {
+  color: #fff !important;
+}
+.whitelist-cal h2.small-heading {
+  font-size: 34px;
+  color: #f832ec !important;
+  text-align: left;
+  background: none;
+  -webkit-text-fill-color: #f832ec;
+  line-height: 1;
+}
+.whitelist-cal .text-right p {
+  margin-bottom: 0px !important;
+  color: #fff;
+}
+.whitelist-cal .row.total-sec h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: normal;
+}
+.partners img.img-responsive.width-450 {
+  max-width: 450px;
+}
+.partners img.img-responsive {
+  max-width: 350px;
+}
+.whitelist-text p {
+  color: #f832ec !important;
+  line-height: 1;
+}
+.whitelist-cal .row.total-sec {
+  margin-top: 40px;
+}
+.whitelist-cal p.white-text {
+  color: #fff;
+  text-align: left;
+}
+.game.comic-tab .tab-content p.pink-color {
+  color: #f832ec !important;
+  font-size: 24px !important;
+  line-height: 30px;
+}

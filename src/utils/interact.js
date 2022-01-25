@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import {chainId} from '../constants/address'
-require("dotenv").config()
+import { chainId } from "../constants/address";
+require("dotenv").config();
 // const alchemyKey = process.env.REACT_APP_ALCHEMY_KEY
 // const { createAlchemyWeb3 } = require("@alch/alchemy-web3")
 // const web3 = createAlchemyWeb3(alchemyKey)
@@ -11,40 +11,44 @@ require("dotenv").config()
 export const connectWallet = async () => {
   if (window.ethereum) {
     try {
-      const chain = await window.ethereum.request({ method: 'eth_chainId' })
-      console.log(chain, parseInt(chain, 16), chainId, parseInt(chain, 16) === chainId)
-      if (parseInt(chain, 16) == chainId) {
+      const chain = await window.ethereum.request({ method: "eth_chainId" });
+      console.log(
+        chain,
+        parseInt(chain, 16),
+        chainId,
+        parseInt(chain, 16) === chainId
+      );
+      if (chain === chainId) {
         const addressArray = await window.ethereum.request({
-          method: 'eth_requestAccounts',
-        })
-        console.log(addressArray)
+          method: "eth_requestAccounts",
+        });
+        console.log(addressArray);
         if (addressArray.length > 0) {
           return {
             address: addressArray[0],
             status: "👆🏽 You can mint new pack now.",
-          }
+          };
         } else {
           return {
             address: "",
             status: "😥 Connect your wallet account to the site.",
-          }
+          };
         }
       } else {
         window.ethereum.request({
-          method: 'wallet_switchEthereumChain',
-          params: [{ chainId:chainId }],
-        })
+          method: "wallet_switchEthereumChain",
+          params: [{ chainId: chainId }],
+        });
         return {
           address: "",
           status: "😥 Connect your wallet account to the site.",
-        }
+        };
       }
-      
     } catch (err) {
       return {
         address: "",
         status: "😥 " + err.message,
-      }
+      };
     }
   } else {
     return {
@@ -55,41 +59,42 @@ export const connectWallet = async () => {
             {" "}
             🦊{" "}
             {/* <a target="_blank" href={`https://metamask.io/download.html`}> */}
-              You must install Metamask, a virtual Ethereum wallet, in your
-              browser.(https://metamask.io/download.html)
+            You must install Metamask, a virtual Ethereum wallet, in your
+            browser.(https://metamask.io/download.html)
             {/* </a> */}
           </p>
         </span>
       ),
-    }
+    };
   }
-}
+};
 
 export const getCurrentWalletConnected = async () => {
   if (window.ethereum) {
     try {
       const addressArray = await window.ethereum.request({
         method: "eth_accounts",
-      })
+      });
       const chain = await window.ethereum.request({
         method: "eth_chainId",
-      })
+      });
       if (addressArray.length > 0 && chain === chainId) {
         return {
           address: addressArray[0],
           status: "👆🏽 You can mint new pack now.",
-        }
+        };
       } else {
         return {
           address: "",
-          status: "🦊 Connect to Metamask and choose the correct chain using the top right button.",
-        }
+          status:
+            "🦊 Connect to Metamask and choose the correct chain using the top right button.",
+        };
       }
     } catch (err) {
       return {
         address: "",
         status: "😥 " + err.message,
-      }
+      };
     }
   } else {
     return {
@@ -100,17 +105,16 @@ export const getCurrentWalletConnected = async () => {
             {" "}
             🦊{" "}
             {/* <a target="_blank" href={`https://metamask.io/download.html`}> */}
-              You must install Metamask, a virtual Ethereum wallet, in your
-              browser.(https://metamask.io/download.html)
+            You must install Metamask, a virtual Ethereum wallet, in your
+            browser.(https://metamask.io/download.html)
             {/* </a> */}
           </p>
         </span>
       ),
-    }
+    };
   }
-}
+};
 
 // async function loadContract() {
 //   return new web3.eth.Contract(contractABI, contractAddress)
 // }
-

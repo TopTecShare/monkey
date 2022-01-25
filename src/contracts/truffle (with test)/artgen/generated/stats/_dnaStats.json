@@ -1,0 +1,767 @@
+{
+    "MaxGenerationPossible": 3948134400000,
+    "BACKGROUND": [
+        {
+            "black": "0.00%"
+        },
+        {
+            "city": "10.00%"
+        },
+        {
+            "coral gradient": "0.00%"
+        },
+        {
+            "coral": "0.00%"
+        },
+        {
+            "dark gray gradient": "10.00%"
+        },
+        {
+            "dark purple gradient": "0.00%"
+        },
+        {
+            "desert": "0.00%"
+        },
+        {
+            "green gradient": "0.00%"
+        },
+        {
+            "grey": "0.00%"
+        },
+        {
+            "jungle": "0.00%"
+        },
+        {
+            "lava": "0.00%"
+        },
+        {
+            "lime gradient": "0.00%"
+        },
+        {
+            "lunar": "0.00%"
+        },
+        {
+            "mix pastel gradient": "20.00%"
+        },
+        {
+            "mm gradient": "0.00%"
+        },
+        {
+            "mountains": "0.00%"
+        },
+        {
+            "mushrooms": "0.00%"
+        },
+        {
+            "orange gradient": "0.00%"
+        },
+        {
+            "orange": "0.00%"
+        },
+        {
+            "palm beach": "0.00%"
+        },
+        {
+            "pastel green": "10.00%"
+        },
+        {
+            "pink": "10.00%"
+        },
+        {
+            "purple gradient": "0.00%"
+        },
+        {
+            "purple": "0.00%"
+        },
+        {
+            "radioactive": "10.00%"
+        },
+        {
+            "sky blue gradient": "10.00%"
+        },
+        {
+            "sky blue": "10.00%"
+        },
+        {
+            "southern gradient": "10.00%"
+        },
+        {
+            "white": "0.00%"
+        },
+        {
+            "yellow": "0.00%"
+        }
+    ],
+    "BASE": [
+        {
+            "base": "100.00%"
+        }
+    ],
+    "EYE": [
+        {
+            "angry": "10.00%"
+        },
+        {
+            "black ghost eyes": "10.00%"
+        },
+        {
+            "bloodshot": "0.00%"
+        },
+        {
+            "blue laser": "20.00%"
+        },
+        {
+            "bored": "0.00%"
+        },
+        {
+            "btc": "10.00%"
+        },
+        {
+            "closed": "0.00%"
+        },
+        {
+            "crazy": "10.00%"
+        },
+        {
+            "cyborg eye": "0.00%"
+        },
+        {
+            "fire": "0.00%"
+        },
+        {
+            "ghost eyes": "0.00%"
+        },
+        {
+            "hypnotized": "0.00%"
+        },
+        {
+            "in love": "0.00%"
+        },
+        {
+            "in tears": "0.00%"
+        },
+        {
+            "laughing": "10.00%"
+        },
+        {
+            "lime laser": "10.00%"
+        },
+        {
+            "mm ghost eyes": "0.00%"
+        },
+        {
+            "popped eye": "0.00%"
+        },
+        {
+            "purple laser": "0.00%"
+        },
+        {
+            "red laser": "10.00%"
+        },
+        {
+            "sad": "0.00%"
+        },
+        {
+            "snake eyes": "0.00%"
+        },
+        {
+            "surprised": "0.00%"
+        },
+        {
+            "thinking": "0.00%"
+        },
+        {
+            "tired": "0.00%"
+        },
+        {
+            "trippy": "0.00%"
+        },
+        {
+            "winking": "0.00%"
+        },
+        {
+            "x eyes": "10.00%"
+        }
+    ],
+    "EYEWEAR": [
+        {
+            "eye patch": "10.00%"
+        },
+        {
+            "holographic": "0.00%"
+        },
+        {
+            "laser line": "10.00%"
+        },
+        {
+            "mm glasses": "0.00%"
+        },
+        {
+            "mm laser line": "0.00%"
+        },
+        {
+            "monocle": "10.00%"
+        },
+        {
+            "neon": "0.00%"
+        },
+        {
+            "night vision": "0.00%"
+        },
+        {
+            "oversized mirror ": "0.00%"
+        },
+        {
+            "round shape": "0.00%"
+        },
+        {
+            "scouter power glasses": "0.00%"
+        },
+        {
+            "snowboard": "0.00%"
+        },
+        {
+            "star shaped": "30.00%"
+        },
+        {
+            "sunglasses": "0.00%"
+        },
+        {
+            "swimming goggles": "40.00%"
+        },
+        {
+            "welding goggles": "0.00%"
+        }
+    ],
+    "MOUTH": [
+        {
+            "angry grin": "0.00%"
+        },
+        {
+            "bandana": "10.00%"
+        },
+        {
+            "big smile": "0.00%"
+        },
+        {
+            "bored": "0.00%"
+        },
+        {
+            "cigar": "0.00%"
+        },
+        {
+            "cigarette": "0.00%"
+        },
+        {
+            "diamond grills": "0.00%"
+        },
+        {
+            "gold grills": "0.00%"
+        },
+        {
+            "graffiti mask": "0.00%"
+        },
+        {
+            "hannya mask": "0.00%"
+        },
+        {
+            "joint": "0.00%"
+        },
+        {
+            "knocked out tooth": "0.00%"
+        },
+        {
+            "light shave": "10.00%"
+        },
+        {
+            "medical mask": "0.00%"
+        },
+        {
+            "mm grills": "10.00%"
+        },
+        {
+            "ninja mask": "0.00%"
+        },
+        {
+            "oh": "20.00%"
+        },
+        {
+            "rage": "10.00%"
+        },
+        {
+            "rainbow grills": "0.00%"
+        },
+        {
+            "side grin": "10.00%"
+        },
+        {
+            "silver grills": "0.00%"
+        },
+        {
+            "smile": "10.00%"
+        },
+        {
+            "tongue out": "10.00%"
+        },
+        {
+            "underwater respirator": "0.00%"
+        },
+        {
+            "vampire": "10.00%"
+        }
+    ],
+    "FUR": [
+        {
+            "black crystal": "20.00%"
+        },
+        {
+            "black": "0.00%"
+        },
+        {
+            "brown": "10.00%"
+        },
+        {
+            "cream": "0.00%"
+        },
+        {
+            "crystal": "0.00%"
+        },
+        {
+            "fuchsia": "0.00%"
+        },
+        {
+            "gold": "0.00%"
+        },
+        {
+            "jaguar": "0.00%"
+        },
+        {
+            "lava": "0.00%"
+        },
+        {
+            "light purple": "10.00%"
+        },
+        {
+            "lime crystal": "0.00%"
+        },
+        {
+            "marble": "0.00%"
+        },
+        {
+            "mm crystal": "0.00%"
+        },
+        {
+            "orange": "0.00%"
+        },
+        {
+            "pink crystal": "0.00%"
+        },
+        {
+            "pink": "10.00%"
+        },
+        {
+            "purple crystal": "10.00%"
+        },
+        {
+            "purple": "0.00%"
+        },
+        {
+            "red": "0.00%"
+        },
+        {
+            "royal blue": "0.00%"
+        },
+        {
+            "shell nacre": "0.00%"
+        },
+        {
+            "silver": "0.00%"
+        },
+        {
+            "sky blue": "0.00%"
+        },
+        {
+            "snake scales": "0.00%"
+        },
+        {
+            "teal crystal": "0.00%"
+        },
+        {
+            "tiger": "10.00%"
+        },
+        {
+            "trippy": "20.00%"
+        },
+        {
+            "velvet": "0.00%"
+        },
+        {
+            "white": "0.00%"
+        },
+        {
+            "yellow": "10.00%"
+        }
+    ],
+    "CLOTHING": [
+        {
+            "army uniform": "0.00%"
+        },
+        {
+            "astro suit": "10.00%"
+        },
+        {
+            "biker jacket": "10.00%"
+        },
+        {
+            "black armor": "0.00%"
+        },
+        {
+            "black suit": "0.00%"
+        },
+        {
+            "black undershirt": "10.00%"
+        },
+        {
+            "centurion armor": "0.00%"
+        },
+        {
+            "chef apron": "0.00%"
+        },
+        {
+            "coat": "0.00%"
+        },
+        {
+            "convict suit": "0.00%"
+        },
+        {
+            "cowboy jacket": "0.00%"
+        },
+        {
+            "deadly suit": "10.00%"
+        },
+        {
+            "emperor armor": "10.00%"
+        },
+        {
+            "gladiator shoulder pad": "0.00%"
+        },
+        {
+            "hawaiian shirt": "0.00%"
+        },
+        {
+            "hoodie": "0.00%"
+        },
+        {
+            "jeans jacket": "0.00%"
+        },
+        {
+            "kimono": "20.00%"
+        },
+        {
+            "lab coat": "0.00%"
+        },
+        {
+            "lightrider": "0.00%"
+        },
+        {
+            "mm astro suit": "0.00%"
+        },
+        {
+            "mm deadly suit": "0.00%"
+        },
+        {
+            "mm hawaiian shirt": "0.00%"
+        },
+        {
+            "mm lightrider": "10.00%"
+        },
+        {
+            "overall": "10.00%"
+        },
+        {
+            "pimp jacket": "0.00%"
+        },
+        {
+            "police armor": "0.00%"
+        },
+        {
+            "primitive shoulder pad": "0.00%"
+        },
+        {
+            "red jacket": "10.00%"
+        },
+        {
+            "rescue suit": "0.00%"
+        },
+        {
+            "samurai armor": "0.00%"
+        },
+        {
+            "shirt and vest": "0.00%"
+        },
+        {
+            "white undershirt": "0.00%"
+        },
+        {
+            "wizard robe": "0.00%"
+        }
+    ],
+    "HEADGEAR": [
+        {
+            "afro": "0.00%"
+        },
+        {
+            "army beret": "0.00%"
+        },
+        {
+            "astro helmet": "20.00%"
+        },
+        {
+            "baseball cap": "0.00%"
+        },
+        {
+            "beanie": "0.00%"
+        },
+        {
+            "biker helmet": "0.00%"
+        },
+        {
+            "black fedora": "10.00%"
+        },
+        {
+            "black headband": "0.00%"
+        },
+        {
+            "centurion helmet": "0.00%"
+        },
+        {
+            "chef toque": "0.00%"
+        },
+        {
+            "clown wig": "0.00%"
+        },
+        {
+            "cowboy hat": "0.00%"
+        },
+        {
+            "crown": "0.00%"
+        },
+        {
+            "deadly helmet": "0.00%"
+        },
+        {
+            "general cap": "0.00%"
+        },
+        {
+            "gladiator helmet": "0.00%"
+        },
+        {
+            "hip hop cap": "0.00%"
+        },
+        {
+            "horned helmet": "10.00%"
+        },
+        {
+            "kasa": "0.00%"
+        },
+        {
+            "lightrider helmet": "0.00%"
+        },
+        {
+            "mm afro": "0.00%"
+        },
+        {
+            "mm astro helmet": "0.00%"
+        },
+        {
+            "mm deadly helmet": "0.00%"
+        },
+        {
+            "mm lightrider helmet": "0.00%"
+        },
+        {
+            "panama hat ": "0.00%"
+        },
+        {
+            "pimp hat": "10.00%"
+        },
+        {
+            "pirate hat": "0.00%"
+        },
+        {
+            "police helmet": "10.00%"
+        },
+        {
+            "rescue helmet": "0.00%"
+        },
+        {
+            "safety helmet": "0.00%"
+        },
+        {
+            "steampunk hat": "10.00%"
+        },
+        {
+            "sushi chef": "0.00%"
+        },
+        {
+            "tactical helmet": "20.00%"
+        },
+        {
+            "top hat": "10.00%"
+        },
+        {
+            "white fedora": "0.00%"
+        },
+        {
+            "wizard hat": "0.00%"
+        }
+    ],
+    "EARRINGS": [
+        {
+            "diamond stud": "0.00%"
+        },
+        {
+            "gold hoop": "0.00%"
+        },
+        {
+            "gold stud": "0.00%"
+        },
+        {
+            "mm diamond stud": "20.00%"
+        },
+        {
+            "silver hoop": "10.00%"
+        },
+        {
+            "silver stud": "30.00%"
+        },
+        {
+            "skull stud": "30.00%"
+        },
+        {
+            "spike stud": "10.00%"
+        }
+    ],
+    "HOLDING": [
+        {
+            "banana": "0.00%"
+        },
+        {
+            "butcher knife": "0.00%"
+        },
+        {
+            "butterfly knife": "10.00%"
+        },
+        {
+            "cigar": "0.00%"
+        },
+        {
+            "diamond": "0.00%"
+        },
+        {
+            "dollars stack": "0.00%"
+        },
+        {
+            "double barrel shotgun": "0.00%"
+        },
+        {
+            "energy grenade": "0.00%"
+        },
+        {
+            "gold stick": "0.00%"
+        },
+        {
+            "graffiti spray": "0.00%"
+        },
+        {
+            "grapnel gun": "0.00%"
+        },
+        {
+            "gym weight": "0.00%"
+        },
+        {
+            "handgun": "0.00%"
+        },
+        {
+            "iron fist knuckles": "0.00%"
+        },
+        {
+            "katana": "0.00%"
+        },
+        {
+            "kunai": "0.00%"
+        },
+        {
+            "lab flask": "10.00%"
+        },
+        {
+            "laser disc": "10.00%"
+        },
+        {
+            "laser spike ball": "0.00%"
+        },
+        {
+            "magic wand": "30.00%"
+        },
+        {
+            "mm diamond": "10.00%"
+        },
+        {
+            "mm laser disc": "10.00%"
+        },
+        {
+            "mm spec ops laser rifle": "10.00%"
+        },
+        {
+            "mm tac laser rifle": "0.00%"
+        },
+        {
+            "money gun": "0.00%"
+        },
+        {
+            "pen": "0.00%"
+        },
+        {
+            "pirate knife": "0.00%"
+        },
+        {
+            "pocket knife": "0.00%"
+        },
+        {
+            "police laser gun": "0.00%"
+        },
+        {
+            "primitive axe": "0.00%"
+        },
+        {
+            "pugio": "0.00%"
+        },
+        {
+            "rescue axe": "0.00%"
+        },
+        {
+            "revolver": "10.00%"
+        },
+        {
+            "spec ops laser rifle": "0.00%"
+        },
+        {
+            "sushi knife": "0.00%"
+        },
+        {
+            "syringe": "0.00%"
+        },
+        {
+            "tac laser rifle": "0.00%"
+        },
+        {
+            "tac shotgun": "0.00%"
+        },
+        {
+            "vape": "0.00%"
+        },
+        {
+            "wrench": "0.00%"
+        }
+    ]
+}

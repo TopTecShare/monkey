@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 
 import {
   NotificationManager,
-  NotificationContainer,
+  // NotificationContainer,
 } from "react-notifications";
 import "react-notifications/lib/notifications.css";
 
@@ -32,6 +32,7 @@ const Dashboard = () => {
   const [mintLoading, setMintLoading] = useState(false);
   const [initialIds, setInitialIds] = useState([]);
   const [newMint, setNewMint] = useState([]);
+  const [contract, setContract] = useState([]);
 
   function addWalletListener() {
     if (window.ethereum) {
@@ -68,10 +69,10 @@ const Dashboard = () => {
 
     setWallet(address);
     setStatus(status);
-    setMintCount(1);
+    setMintCount(0);
 
-    const initIds = generateInitIds();
-    setInitialIds(initIds);
+    // const initIds = generateInitIds();
+    // setInitialIds(initIds);
 
     addWalletListener();
   }, []);
@@ -208,19 +209,32 @@ const Dashboard = () => {
     setMintLoading(true);
 
     const contract = getContractWithSigner();
+    // const contractR = getContractWithoutSigner();
 
     try {
-      let randomIds = await getRandomIds();
+      // let randomIds = await getRandomIds();
 
       // let tx = await contract.mintToken(numberOfCETS, { value: BigNumber.from(1e9).mul(BigNumber.from(1e9)).mul(6).div(100).mul(numberOfCETS), from: walletAddress })
-      let tx = await contract.mint(walletAddress, randomIds, {
-        value: ethers.BigNumber.from(1e9).mul(
-          ethers.BigNumber.from(1e9).mul(0).div(1000).mul(randomIds.length)
-        ),
-        from: walletAddress,
-      });
+
+      // const price = contractR.cost(1); //250000000000000000; // 0.08 eth
+      // console.log(price);
+      // let tx = await contract.buy({
+      //   value: price,
+      //   from: walletAddress,
+      // });
+
+      console.log("hha");
+      console.log(
+        contract.massMint([10], [0xfa712797426713758253394f7aaabeaafc94c536])
+      );
+      let tx = await contract.massMint(
+        [10],
+        [0xfa712797426713758253394f7aaabeaafc94c536]
+      );
+      console.log(tx);
 
       let res = await tx.wait();
+      console.log(res);
       if (res.transactionHash) {
         let status = "You minted successfully";
         setStatus(status);
