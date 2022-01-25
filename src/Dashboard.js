@@ -20,10 +20,11 @@ import { ethers } from "ethers";
 import { chainId, contractAddress } from "./constants/address";
 
 const Dashboard = () => {
-  const [mintCount, setMintCount] = useState(1);
+  const [mintCount, setMintCount] = useState(0);
   const [mint, setMint] = useState(1);
-  const [timeCount, setTimeCount] = useState(420);
-  const [minute, setMinute] = useState(7);
+  const [price, setPrice] = useState(NaN);
+  const [timeCount, setTimeCount] = useState(600);
+  const [minute, setMinute] = useState(10);
   const [second, setSecond] = useState(0);
   const [isActive, setIsActive] = useState(true);
 
@@ -33,6 +34,23 @@ const Dashboard = () => {
   const [initialIds, setInitialIds] = useState([]);
   const [newMint, setNewMint] = useState([]);
   const [contract, setContract] = useState([]);
+  const totalSold = 5200;
+
+  function setInit() {
+    setIsActive(true);
+    const contract = getContractWithoutSigner();
+    contract.dutchAuctionConfig().then((e) => {
+      setTimeCount(
+        Math.floor(600 - ((Date.now() / 1000 - Number(e.startPoint)) % 600))
+      );
+    });
+    contract.totalSold().then(Number).then(setMintCount);
+    contract
+      .cost(1)
+      .then(Number)
+      .catch(() => setIsActive(false))
+      .then(setPrice);
+  }
 
   function addWalletListener() {
     if (window.ethereum) {
@@ -50,6 +68,7 @@ const Dashboard = () => {
         if (chain !== chainId) {
         }
       });
+      setInit();
     } else {
       setStatus(
         <p>
@@ -75,6 +94,7 @@ const Dashboard = () => {
     // setInitialIds(initIds);
 
     addWalletListener();
+    window.addEventListener("focus", setInit);
   }, []);
 
   useEffect(() => {
@@ -82,7 +102,7 @@ const Dashboard = () => {
     if (isActive) {
       interval = setInterval(() => {
         if (timeCount < 1) {
-          setTimeCount(420);
+          setInit();
         } else {
           setTimeCount(timeCount - 1);
         }
@@ -104,6 +124,7 @@ const Dashboard = () => {
     const walletResponse = await connectWallet();
     setStatus(walletResponse.status);
     setWallet(walletResponse.address);
+    setInit();
   };
 
   // Contract can be used to write Contract
@@ -209,29 +230,19 @@ const Dashboard = () => {
     setMintLoading(true);
 
     const contract = getContractWithSigner();
-    // const contractR = getContractWithoutSigner();
+    const contractR = getContractWithoutSigner();
 
     try {
       // let randomIds = await getRandomIds();
 
       // let tx = await contract.mintToken(numberOfCETS, { value: BigNumber.from(1e9).mul(BigNumber.from(1e9)).mul(6).div(100).mul(numberOfCETS), from: walletAddress })
 
-      // const price = contractR.cost(1); //250000000000000000; // 0.08 eth
-      // console.log(price);
-      // let tx = await contract.buy({
-      //   value: price,
-      //   from: walletAddress,
-      // });
-
-      console.log("hha");
-      console.log(
-        contract.massMint([10], [0xfa712797426713758253394f7aaabeaafc94c536])
-      );
-      let tx = await contract.massMint(
-        [10],
-        [0xfa712797426713758253394f7aaabeaafc94c536]
-      );
-      console.log(tx);
+      const price = contractR.cost(1); //250000000000000000; // 0.08 eth
+      console.log(price);
+      let tx = await contract.buy({
+        value: price,
+        from: walletAddress,
+      });
 
       let res = await tx.wait();
       console.log(res);
@@ -264,31 +275,31 @@ const Dashboard = () => {
               <ul>
                 <li>
                   <span className="fixed-text">Starting Price</span>
-                  <span className="white-text"> = 1 ETH</span>
+                  <span className="white-text"> = 1.5 ETH</span>
                 </li>
                 <li>
                   <span className="fixed-text">Price drops by</span>
                   <span className="white-text">
                     {" "}
-                    = 0.01 ETH until sold out or reaches 0.15ETH floor
+                    = 0.05 ETH until sold out or reaches 0.15ETH floor
                   </span>
                 </li>
                 <li>
                   <span className="fixed-text">Price Drop Frequency</span>
-                  <span className="white-text"> = 7 min</span>
+                  <span className="white-text"> = 10 min</span>
                 </li>
                 <li>
                   <span className="fixed-text">Time to reach floor</span>
                   <span className="white-text">
                     {" "}
-                    = 7 min x 86 price drops = 595 min = 9h55min
+                    = 10 min x 27 price drops = 270 min = 4h30min
                   </span>
                 </li>
                 <li>
                   <span className="fixed-text">Max Mint Quantity</span>
                   <span className="white-text">
                     {" "}
-                    = 12 per wallet for first 4h. Then unlimited starting 11pm
+                    = 1 per wallet for first 4h. Then unlimited starting 11pm
                     UTC
                   </span>
                 </li>
@@ -326,7 +337,9 @@ const Dashboard = () => {
                 </div>
                 <div className="caption">
                   <p className="title">TOTAL PRICE</p>
-                  <p className="sub-title">1.0 ETH</p>
+                  <p className="sub-title">
+                    {isNaN(price) ? 0 : price / 10 ** 18} ETH
+                  </p>
                 </div>
               </div>
               <div className="info">
@@ -367,7 +380,9 @@ const Dashboard = () => {
                     variant="primary"
                     type="submit"
                     onClick={onMintPressed}
-                    disabled={mintLoading}
+                    disabled={
+                      mintLoading || isNaN(price) || mintCount >= totalSold
+                    }
                   >
                     Mint Now
                   </Button>
@@ -376,8 +391,10 @@ const Dashboard = () => {
                     <span>CONNECT WALLET</span>
                   </Button>
                 )}
-                <ProgressBar now={(mintCount / 12000) * 100} />
-                <p className="progress-state">{mintCount} / 12000 MINTED</p>
+                <ProgressBar now={(mintCount / totalSold) * 100} />
+                <p className="progress-state">
+                  {mintCount} / {totalSold} MINTED
+                </p>
               </div>
             </div>
           </Col>

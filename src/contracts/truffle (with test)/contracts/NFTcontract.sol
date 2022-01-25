@@ -56,7 +56,7 @@ contract NFTContract is
                 lockFreeQuota: true,
                 reserveFreeQuota: true
             }),
-            beneficiary
+            payable(msg.sender) // beneficiary
         )
     {}
 
