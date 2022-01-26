@@ -34,6 +34,7 @@ const Dashboard = () => {
   const totalSold = 5200;
 
   function setInit() {
+    setIsActive(true);
     const contract = getContractWithoutSigner();
     contract.dutchAuctionConfig().then((e) => {
       setTimeCount(

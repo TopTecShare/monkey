@@ -12,6 +12,7 @@ export const connectWallet = async () => {
   if (window.ethereum) {
     try {
       const chain = await window.ethereum.request({ method: "eth_chainId" });
+      console.log("dd");
       console.log(
         chain,
         parseInt(chain, 16),

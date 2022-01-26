@@ -214,7 +214,11 @@ export default function Whitelist() {
                       Mint Now
                     </Button>
                   ) : (
-                    <Button variant="primary" onClick={connectWalletPressed}>
+                    <Button
+                      className="btn btn-dark"
+                      variant="primary"
+                      onClick={connectWalletPressed}
+                    >
                       <span>CONNECT WALLET</span>
                     </Button>
                   )}
