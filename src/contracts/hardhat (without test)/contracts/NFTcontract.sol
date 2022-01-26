@@ -91,7 +91,7 @@ contract NFTContract is
             ),
             "Invalid"
         );
-        require(whitelistCount[msg.sender] + count <= max, "Max Mint");
+        require(whitelistCount[msg.sender] + count <= 1, "Max Mint");
         _callMint(count);
         whitelistCount[msg.sender] += count;
     }

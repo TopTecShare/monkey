@@ -26,18 +26,14 @@ const Dashboard = () => {
   const [timeCount, setTimeCount] = useState(600);
   const [minute, setMinute] = useState(10);
   const [second, setSecond] = useState(0);
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
 
   const [walletAddress, setWallet] = useState("");
-  const [status, setStatus] = useState("");
+  const [, setStatus] = useState("");
   const [mintLoading, setMintLoading] = useState(false);
-  const [initialIds, setInitialIds] = useState([]);
-  const [newMint, setNewMint] = useState([]);
-  const [contract, setContract] = useState([]);
   const totalSold = 5200;
 
   function setInit() {
-    setIsActive(true);
     const contract = getContractWithoutSigner();
     contract.dutchAuctionConfig().then((e) => {
       setTimeCount(
@@ -52,50 +48,57 @@ const Dashboard = () => {
       .then(setPrice);
   }
 
-  function addWalletListener() {
-    if (window.ethereum) {
-      window.ethereum.on("accountsChanged", (accounts) => {
-        if (accounts.length > 0) {
-          setWallet(accounts[0]);
-          setStatus("👆🏽 You can mint new pack now.");
-        } else {
-          setWallet("");
-          setStatus("🦊 Connect to Metamask using the Connect button.");
-        }
-      });
-      window.ethereum.on("chainChanged", (chain) => {
-        connectWalletPressed();
-        if (chain !== chainId) {
-        }
-      });
-      setInit();
+  useEffect(() => {
+    function addWalletListener() {
+      if (window.ethereum) {
+        window.ethereum.on("accountsChanged", (accounts) => {
+          if (accounts.length > 0) {
+            setWallet(accounts[0]);
+            setStatus("👆🏽 You can mint new pack now.");
+          } else {
+            setWallet("");
+            setStatus("🦊 Connect to Metamask using the Connect button.");
+          }
+        });
+        window.ethereum.on("chainChanged", (chain) => {
+          connectWalletPressed();
+          if (chain !== chainId) {
+          }
+          window.location.reload(false);
+        });
+      } else {
+        setStatus(
+          <p>
+            {" "}
+            🦊{" "}
+            {/* <a target="_blank" href={`https://metamask.io/download.html`}> */}
+            You must install Metamask, a virtual Ethereum wallet, in your
+            browser.(https://metamask.io/download.html)
+            {/* </a> */}
+          </p>
+        );
+      }
+    }
+
+    const myFunc = async () => {
+      const { address, status } = await getCurrentWalletConnected();
+
+      setWallet(address);
+      setStatus(status);
+
+      addWalletListener();
+      if (address !== "") setInit();
       // const contract = getContractWithoutSigner();
       // contract.on("Revenue", (beneficiary, n, _cost) => {
       //   console.log(beneficiary, n, _cost);
       //   setMintCount(Number(mintCount) + n);
       // });
-    } else {
-      setStatus(
-        <p>
-          {" "}
-          🦊{" "}
-          {/* <a target="_blank" href={`https://metamask.io/download.html`}> */}
-          You must install Metamask, a virtual Ethereum wallet, in your
-          browser.(https://metamask.io/download.html)
-          {/* </a> */}
-        </p>
-      );
-    }
-  }
-
-  useEffect(async () => {
-    const { address, status } = await getCurrentWalletConnected();
-
-    setWallet(address);
-    setStatus(status);
-
-    addWalletListener();
-    window.addEventListener("focus", setInit);
+      window.addEventListener("focus", () => {
+        if (walletAddress !== "") setInit();
+      });
+    };
+    myFunc();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -114,6 +117,7 @@ const Dashboard = () => {
       clearInterval(interval);
     }
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeCount, isActive]);
 
   const changeMint = (e) => {
@@ -125,7 +129,7 @@ const Dashboard = () => {
     const walletResponse = await connectWallet();
     setStatus(walletResponse.status);
     setWallet(walletResponse.address);
-    setInit();
+    if (walletResponse.address !== "") setInit();
   };
 
   // Contract can be used to write Contract
@@ -151,65 +155,6 @@ const Dashboard = () => {
     );
 
     return contract;
-  };
-
-  const getContract = () => {
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    const signer = provider.getSigner();
-
-    const contractABI = require("./constants/contract-abi.json");
-    const contract = new ethers.Contract(contractAddress, contractABI, signer);
-    return contract;
-  };
-
-  const generateInitIds = () => {
-    let initIds = [];
-
-    for (let i = 0; i < 2500; i++) {
-      initIds.push(i + 1);
-    }
-
-    return initIds;
-  };
-
-  const getOccupiedIds = async () => {
-    try {
-      const contract = getContractWithoutSigner();
-
-      let occupiedList = await contract.occupiedList();
-
-      return occupiedList;
-    } catch (err) {
-      return 0;
-    }
-  };
-
-  const getDiffArray = (source, target) => {
-    return source.filter((index) => {
-      let tempArray = [];
-      for (let i = 0; i < target.length; i++) {
-        tempArray.push(ethers.BigNumber.from(target[i]).toNumber());
-      }
-
-      return tempArray.indexOf(index) < 0;
-    });
-  };
-
-  const getRandomIds = async () => {
-    let customIds = [];
-    const occupied = await getOccupiedIds();
-
-    console.log(initialIds);
-    console.log(occupied);
-    const diffIds = getDiffArray(initialIds, occupied);
-
-    while (customIds.length < mintCount) {
-      const id = Math.floor(Math.random() * diffIds.length);
-      const index = diffIds[id];
-      customIds.push(index);
-    }
-
-    return customIds;
   };
 
   const onMintPressed = async () => {
@@ -334,7 +279,10 @@ const Dashboard = () => {
             <div className="avatar">
               <div className="monkey">
                 <div className="monkey-image">
-                  <img src={require("./assets/img/monkey.png").default} />
+                  <img
+                    src={require("./assets/img/monkey.png").default}
+                    alt="no resource"
+                  />
                 </div>
                 <div className="caption">
                   <p className="title">TOTAL PRICE</p>

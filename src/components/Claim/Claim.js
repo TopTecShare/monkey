@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Tabs, Tab } from "react-bootstrap";
 import {
   NotificationManager,
   // NotificationContainer,
@@ -20,10 +19,9 @@ import { ethers } from "ethers";
 import { chainId, contractAddress } from "../../constants/address";
 
 export default function Claim() {
-  const [key, setKey] = useState("home");
   const [mintCount, setMintCount] = useState(0);
   const [walletAddress, setWallet] = useState("");
-  const [status, setStatus] = useState("");
+  const [, setStatus] = useState("");
   const [mintLoading, setMintLoading] = useState(false);
   const totalSupply = 12000;
 
@@ -51,48 +49,56 @@ export default function Claim() {
 
     return contract;
   };
-  function addWalletListener() {
-    if (window.ethereum) {
-      window.ethereum.on("accountsChanged", (accounts) => {
-        if (accounts.length > 0) {
-          setWallet(accounts[0]);
-          setStatus("👆🏽 You can mint new pack now.");
-        } else {
-          setWallet("");
-          setStatus("🦊 Connect to Metamask using the Connect button.");
-        }
-      });
-      window.ethereum.on("chainChanged", (chain) => {
-        connectWalletPressed();
-        if (chain !== chainId) {
-        }
-      });
-      const contract = getContractWithoutSigner();
-      contract.totalSupply().then(setMintCount);
-      contract.on("Transfer", (from, to, index) => {
+
+  useEffect(() => {
+    const addWalletListener = () => {
+      if (window.ethereum) {
+        window.ethereum.on("accountsChanged", (accounts) => {
+          if (accounts.length > 0) {
+            setWallet(accounts[0]);
+            setStatus("👆🏽 You can mint new pack now.");
+          } else {
+            setWallet("");
+            setStatus("🦊 Connect to Metamask using the Connect button.");
+          }
+        });
+        window.ethereum.on("chainChanged", (chain) => {
+          connectWalletPressed();
+          if (chain !== chainId) {
+          }
+          window.location.reload(false);
+        });
+      } else {
+        setStatus(
+          <p>
+            {" "}
+            🦊{" "}
+            {/* <a target="_blank" href={`https://metamask.io/download.html`}> */}
+            You must install Metamask, a virtual Ethereum wallet, in your
+            browser.(https://metamask.io/download.html)
+            {/* </a> */}
+          </p>
+        );
+      }
+    };
+
+    const myFunc = async () => {
+      const { address, status } = await getCurrentWalletConnected();
+
+      setWallet(address);
+      setStatus(status);
+
+      if (address !== "") {
+        const contract = getContractWithoutSigner();
         contract.totalSupply().then(setMintCount);
-      });
-    } else {
-      setStatus(
-        <p>
-          {" "}
-          🦊{" "}
-          {/* <a target="_blank" href={`https://metamask.io/download.html`}> */}
-          You must install Metamask, a virtual Ethereum wallet, in your
-          browser.(https://metamask.io/download.html)
-          {/* </a> */}
-        </p>
-      );
-    }
-  }
+        contract.on("Transfer", (from, to, index) => {
+          contract.totalSupply().then(setMintCount);
+        });
+      }
 
-  useEffect(async () => {
-    const { address, status } = await getCurrentWalletConnected();
-
-    setWallet(address);
-    setStatus(status);
-
-    addWalletListener();
+      addWalletListener();
+    };
+    myFunc();
   }, []);
 
   const connectWalletPressed = async () => {
@@ -118,7 +124,7 @@ export default function Claim() {
       // console.log(contract.whitelistMint)
       // console.log(getWhitelistHexProofFromAddrs(walletAddress))
       let count = getFreeClaimCount(walletAddress);
-			console.log(count)
+      console.log(count);
       let tx = await contract.claim(
         count,
         getFreeClaimHexProofFromAddrs(count, walletAddress),
