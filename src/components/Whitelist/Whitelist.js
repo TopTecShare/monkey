@@ -191,14 +191,14 @@ export default function Whitelist() {
                 </div>
                 <div className="row total-sec">
                   <h3>
-                    1 <span>0.15 ETH max </span>
+                    1 <span>0.07 ETH max </span>
                   </h3>
                 </div>
                 <div className="row top-30 total-sec2">
                   <h3>
                     Total{" "}
                     <span>
-                      <span className="pink">0.15</span> ETH{" "}
+                      <span className="pink">0.07</span> ETH{" "}
                     </span>
                   </h3>
                 </div>
