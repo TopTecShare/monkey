@@ -43,7 +43,7 @@ const Dashboard = () => {
     });
     contract.totalSold().then(Number).then(setMintCount);
     contract
-      .cost(1)
+      .cost(mint)
       .then(Number)
       .catch(() => setIsActive(false))
       .then(setPrice);
@@ -100,7 +100,7 @@ const Dashboard = () => {
     };
     myFunc();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [mint]);
 
   useEffect(() => {
     let interval = null;
