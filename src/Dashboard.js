@@ -288,7 +288,10 @@ const Dashboard = () => {
                 <div className="caption">
                   <p className="title">TOTAL PRICE</p>
                   <p className="sub-title">
-                    {isNaN(price) ? 0 : price / 10 ** 18} ETH
+                    {isNaN(price)
+                      ? 0
+                      : String((price / 10 ** 18) * mint).slice(0, 5)}{" "}
+                    ETH
                   </p>
                 </div>
               </div>
@@ -296,18 +299,14 @@ const Dashboard = () => {
                 <div className="mb-3">
                   <div className="form-control">
                     <span className="result">MINT</span>
-                    <div className="select">
-                      <span>{mint}</span>
-                      <Form.Select
-                        aria-label="Default select example"
+                    <div className="select input">
+                      <Form.Control
+                        type="number"
+                        min="1"
+                        max="12"
                         value={mint}
-                        onChange={changeMint}
-                      >
-                        <option>1 max</option>
-                        <option value="5">5 max</option>
-                        <option value="8">8 max</option>
-                        <option value="10">10 max</option>
-                      </Form.Select>
+                        onChange={(e) => setMint(e.target.value)}
+                      />
                     </div>
                   </div>
                 </div>
@@ -315,12 +314,14 @@ const Dashboard = () => {
                   <div className="form-control">
                     <span className="result">TOTAL</span>
                     <div className="select">
-                      <span>{mint}ETH</span>
-                      <Form.Select aria-label="Default select example">
+                      <span>
+                        {isNaN(price)
+                          ? 0
+                          : String((price / 10 ** 18) * mint).slice(0, 5)}
+                        ETH
+                      </span>
+                      <Form.Select aria-label="Defalt select example" disabled>
                         <option>ETH</option>
-                        <option value="1">SOL</option>
-                        <option value="2">BSC</option>
-                        <option value="3">Cardano</option>
                       </Form.Select>
                     </div>
                   </div>
