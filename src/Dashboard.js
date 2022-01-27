@@ -81,6 +81,10 @@ const Dashboard = () => {
       }
     }
 
+    window.addEventListener("focus", () => {
+      if (walletAddress !== "") setInit();
+    });
+
     const myFunc = async () => {
       const { address, status } = await getCurrentWalletConnected();
 
@@ -94,13 +98,10 @@ const Dashboard = () => {
       //   console.log(beneficiary, n, _cost);
       //   setMintCount(Number(mintCount) + n);
       // });
-      window.addEventListener("focus", () => {
-        if (walletAddress !== "") setInit();
-      });
     };
     myFunc();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mint]);
+  });
 
   useEffect(() => {
     let interval = null;
@@ -302,7 +303,7 @@ const Dashboard = () => {
                         min="1"
                         max="12"
                         value={mint}
-                        onChange={(e) => setMint(e.target.value)}
+                        onChange={changeMint}
                       />
                     </div>
                   </div>
