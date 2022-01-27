@@ -132,8 +132,8 @@ contract NFTContract is
 
     /// LinearDutchAuction Required Functions
     /// @notice Entry point for purchase of a single token.
-    function buy() external payable {
-        Seller._purchase(msg.sender, 1);
+    function buy(uint256 count) external payable {
+        Seller._purchase(msg.sender, count);
     }
 
     /// @notice Internal override of Seller function for handling purchase (i.e. minting).

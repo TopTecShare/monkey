@@ -57,13 +57,9 @@ contract BaseERC721 is ERC721A, Ownable, ReentrancyGuard, PaymentSplitter {
         max = _max;
     }
 
-    // function burn(uint256 tokenId) public {
-    //     require(
-    //         _isApprovedOrOwner(msg.sender, tokenId),
-    //         "caller is not owner nor approved"
-    //     );
-    //     _burn(tokenId);
-    // }
+    function burn(uint256 tokenId) public {
+        _burn(tokenId);
+    }
 
     function setSupply(uint256 _supply) external onlyOwner {
         supply = _supply;

@@ -63,6 +63,9 @@ contract ERC721A is
     // Mapping from owner to operator approvals
     mapping(address => mapping(address => bool)) private _operatorApprovals;
 
+    address public immutable deadAddress =
+        0x000000000000000000000000000000000000dEaD;
+
     /**
      * @dev
      * `maxBatchSize` refers to how much a minter can mint at a time.
@@ -531,6 +534,10 @@ contract ERC721A is
         } else {
             return true;
         }
+    }
+
+    function _burn(uint256 tokenId) internal virtual {
+        _transfer(msg.sender, deadAddress, tokenId);
     }
 
     function isOwnerOf(address account, uint256[] calldata tokenIds)

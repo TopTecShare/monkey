@@ -184,9 +184,9 @@ const Dashboard = () => {
 
       // let tx = await contract.mintToken(numberOfCETS, { value: BigNumber.from(1e9).mul(BigNumber.from(1e9)).mul(6).div(100).mul(numberOfCETS), from: walletAddress })
 
-      const price = contractR.cost(1); //250000000000000000; // 0.08 eth
+      const price = contractR.cost(mint); //250000000000000000; // 0.08 eth
       price.then(console.log);
-      let tx = await contract.buy({
+      let tx = await contract.buy(mint, {
         value: price,
         from: walletAddress,
       });
@@ -288,10 +288,7 @@ const Dashboard = () => {
                 <div className="caption">
                   <p className="title">TOTAL PRICE</p>
                   <p className="sub-title">
-                    {isNaN(price)
-                      ? 0
-                      : String((price / 10 ** 18) * mint).slice(0, 5)}{" "}
-                    ETH
+                    {isNaN(price) ? 0 : price / 10 ** 18} ETH
                   </p>
                 </div>
               </div>
@@ -299,7 +296,7 @@ const Dashboard = () => {
                 <div className="mb-3">
                   <div className="form-control">
                     <span className="result">MINT</span>
-                    <div className="select input">
+                    <div className="select">
                       <Form.Control
                         type="number"
                         min="1"
@@ -315,9 +312,7 @@ const Dashboard = () => {
                     <span className="result">TOTAL</span>
                     <div className="select">
                       <span>
-                        {isNaN(price)
-                          ? 0
-                          : String((price / 10 ** 18) * mint).slice(0, 5)}
+                        {isNaN(price) ? 0 : price / 10 ** 18}
                         ETH
                       </span>
                       <Form.Select aria-label="Defalt select example" disabled>
