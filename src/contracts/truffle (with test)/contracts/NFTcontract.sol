@@ -33,7 +33,7 @@ contract NFTContract is
             _supply,
             _max,
             0.07 ether,
-            "https://ipfs.io/ipfs/QmeHzogTxMk27xDARdPJfQMqNF1xyUt4oECNSrCQfpwCH8/",
+            "https://ipfs.io/ipfs/QmUZa3LfbQVYux98Tzhn4cjVvrCkuG78MYS8wVsxNzzC9W/",
             "NFTContract",
             "NFTC"
         )
