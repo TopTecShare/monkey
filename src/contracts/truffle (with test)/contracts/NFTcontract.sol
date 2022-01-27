@@ -50,8 +50,8 @@ contract NFTContract is
             Seller.SellerConfig({
                 totalInventory: 5200,
                 lockTotalInventory: true,
-                maxPerAddress: 1,
-                maxPerTx: 1,
+                maxPerAddress: 12,
+                maxPerTx: 12,
                 freeQuota: 0,
                 lockFreeQuota: true,
                 reserveFreeQuota: true
